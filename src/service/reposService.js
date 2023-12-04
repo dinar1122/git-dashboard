@@ -1,4 +1,5 @@
 import http from '../api/githubApi.js';
+import axiosInstance from 'axios'
 
 
 class ReposSevice { 
@@ -23,6 +24,16 @@ class ReposSevice {
     const response = http.get(`/repositories/${id}/languages`)
     return response
   }
-  
+  async getUserRepos(login) {
+    
+    try {
+      const response = await axiosInstance.get(`/users/${login}/repos`);
+      console.log(response)
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      throw new Error('Failed to fetch user repositories');
+    }
+  }
 }
 export default new ReposSevice()

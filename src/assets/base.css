@@ -4,6 +4,9 @@
   height: 100px; 
   margin: 20px;
 }
+body {
+  background-color: rgba(30, 73, 92, 0.441);
+}
 a:link {
   text-decoration: none; /* Убираем подчеркивание */
   color: inherit;
@@ -32,7 +35,7 @@ a:link {
   transition: 0.3s;
   display: flex;
   margin: 35px;
-  background: #edf3f3;
+  background: #e3f7fb;
   max-width: 650px;
   border-radius: 1rem;
   padding-bottom: 1rem;
@@ -42,7 +45,7 @@ a:link {
   transition: 0.3s;
   display: flex;
   margin: 35px;
-  background: #cedbdf9d;
+  background: #d4e7ec;
   max-width: 650px;
   border-radius: 1rem;
   
@@ -138,7 +141,7 @@ h3 {
 .pag-container {
   display: flex;
   margin: 30px 30px 30px 35px;
-  background-color: #edf3f3;
+  background-color: #e3f7fb;
   border-radius: 1rem;
   width: max-content;
 }
@@ -151,18 +154,19 @@ h3 {
 .search {
   border-radius: 1rem;
   margin: 35px;
-  background-color: #edf3f3;
+  background-color: #e3f7fb;
   padding: 10px;
 }
 .search-line {
+  outline: none;
   border-radius: 0.5rem;
-  background-color: #edf3f3;
+  background-color: #e3f7fb;
   border-style: hidden;
   height: 25px;
   width:99%;
 }
 .review-head {
-  background-color: #edf3f3;
+  background-color: #e3f7fb;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   margin-top: -10px;
@@ -175,12 +179,12 @@ span {
 .review-main {
   margin-top: 30px;
   border-radius: 1rem;
-  background-color: #edf3f3;
+  background-color: #e3f7fb;
   padding: 40px;
   padding-top: 20px;
 }
 .pag-item .btn.active {
-  background-color: #4591e2a9;
+  background-color: rgba(72, 118, 145, 0.856);
   color: #fff;
 }
 .container-review {
@@ -188,7 +192,7 @@ span {
   max-width: 647px;
 }
 .review-footer {
-  background-color: #edf3f3;
+  background-color: #e3f7fb;
   padding: 40px;
   padding-top: 30px;
   border-top-left-radius: 1rem;
